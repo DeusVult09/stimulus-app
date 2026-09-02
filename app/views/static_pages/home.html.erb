@@ -1,0 +1,7 @@
+ <div data-controller="toggle">
+    <button data-action="toggle#toggle">Choose a car</button>
+
+    <div data-toggle-target="list" hidden>
+        <%= select_tag :cars, options_for_select(["Honda", "Toyota", "BMW", "Ferrari", "Tesla", "BYD"]) %>
+    </div>
+ </div>
