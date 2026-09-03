@@ -6,5 +6,12 @@
     
     <div data-toggle-target="list" hidden>
         <%= select_tag :cars, options_for_select(["Tesla", "BMW", "Honda", "BYD", "Ferrary", "Mercedes"]), { include_blank: true } %>
+    </div><br><br>
+
+    <div data-action="click->toggle#switch" data-toggle-target="invisible">Click me and I will dissapear!</div><br><br>
+    <div data-toggle-target="visible" hidden>
+        Hey, I am here!
     </div>
 </div>
+
+
