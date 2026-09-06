@@ -8,3 +8,13 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+.item {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+
+.highlight {
+    background-color: aqua;
+}

@@ -13,6 +13,9 @@ export default class extends Controller {
     this.invisibleTarget.hidden = !this.invisibleTarget.hidden
   }
 
+  highlight(event) {
+    event.target.closest(".item").classList.toggle("highlight")
+  }
 
 
 }
