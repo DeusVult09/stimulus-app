@@ -17,5 +17,4 @@ export default class extends Controller {
     event.target.closest(".item").classList.toggle("highlight")
   }
 
-
 }

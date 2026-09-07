@@ -1,7 +1,6 @@
 
 
 <div data-controller="toggle">
-
     <button data-action="toggle#toggle">Choose a car</button><br><br>
     
     <div data-toggle-target="list" hidden>
@@ -29,8 +28,15 @@
     <div class="item">
         <label><input type="checkbox" data-action="change->toggle#highlight">Gaming</label>
     </div>
+</div><br><br>
 
-
+<div data-controller="character-count">
+    <div>Your Post:</div><br>
+    <div class="field">
+        <textarea id="post-content" data-action="input->character-count#count"></textarea>
+    </div><br>
+    <div>Characters: <span data-character-count-target="counter">0</span> / 100</div>
 </div>
+
 
 
