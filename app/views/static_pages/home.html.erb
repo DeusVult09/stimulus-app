@@ -33,9 +33,10 @@
 <div data-controller="character-count">
     <div>Your Post:</div><br>
     <div class="field">
-        <textarea id="post-content" data-action="input->character-count#count"></textarea>
+        <textarea id="post-content" maxlength="100" data-character-count-target="input" data-action="input->character-count#count"></textarea>
     </div><br>
     <div>Characters: <span data-character-count-target="counter">0</span> / 100</div>
+    <p data-character-count-target="warning"></p>
 </div>
 
 
